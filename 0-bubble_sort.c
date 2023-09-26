@@ -50,17 +50,17 @@ void bubble_sort(int *array, size_t size)
 
 void print_array(const int *array, size_t size)
 {
-    size_t i;
+	size_t i;
 
-    i = 0;
-    while (array && i < size)
-    {
-        if (i > 0)
-            printf(", ");
-        printf("%d", array[i]);
-        ++i;
-    }
-    printf("\n");
+	i = 0;
+	while (array && i < size)
+	{
+		if (i > 0)
+			printf(", ");
+		printf("%d", array[i]);
+		++i;
+	}
+	printf("\n");
 }
 
 int main()
@@ -68,13 +68,13 @@ int main()
 	int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
 	size_t n = sizeof(array) / sizeof(array[0]);
 
-        printf("Original Array:\n");
-        print_array(array, size_t);
-    
-        bubble_sort(array, size_t);
+	printf("Original Array:\n");
+	print_array(array, size_t);
 
-        printf("Sorted Array in Ascending Order:\n");
-        print_array(array, size_t);
-    
-        return(0);
+	bubble_sort(array, size_t);
+
+	printf("Sorted Array in Ascending Order:\n");
+	print_array(array, size_t);
+
+	return(0);
 }
