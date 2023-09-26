@@ -6,7 +6,7 @@
  * @b: param B.
  */
 
-void swap_ints(int *a, int *b)
+void _swap_ints(int *a, int *b)
 {
 	int tmp;
 
